@@ -13,7 +13,7 @@ const SignInWithGoogleButton = () => {
             signInWithGoogle();
         }}
     >
-        Login with Google
+        Sign In with Google
     </Button>
   )
 }

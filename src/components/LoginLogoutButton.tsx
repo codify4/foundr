@@ -25,6 +25,7 @@ const LoginButton = ({ className }: { className?: string }) => {
           signout();
           setUser(null);
         }}
+        className={className}
       >
         Log out
       </Button>
