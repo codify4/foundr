@@ -10,7 +10,9 @@ export default function Home() {
       <TopNav features="features" pricing="pricing" />
       <main className="flex flex-col items-center justify-center w-full">
         <Hero />
-        <Features />
+        <div className="my-5 w-8/12">
+          <Features />
+        </div>
         <Pricing />
       </main>
       <Footer />
