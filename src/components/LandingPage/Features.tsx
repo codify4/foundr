@@ -2,9 +2,8 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import AnimatedBeamOutput from "./AnimatedBeam";
 import { CalendarCheck, ChartLine, CircleDot, Link, LinkIcon, ProjectorIcon } from "lucide-react";
 import { AnimatedListDemo } from "./AnimatedList";
-import { Calendar } from "../ui/calendar";
-import Globe from "../magicui/globe";
 import { ChartDemo } from "./DemoChart";
+import { PieChartDemo } from "./PieChartDemo";
 
 const features = [
   {
@@ -27,14 +26,12 @@ const features = [
     Icon: CalendarCheck,
     name: "Activity Graphs",
     description: "Connect your GitHub contributions graph or a custom X posts graph.",
-    className: "col-span-2 row-span-1",
+    className: "col-span-2 row-span-1 relative overflow-hidden", // Added relative and overflow-hidden
     href: "#",
     background: (
-      <Calendar
-        mode="single"
-        selected={new Date(2022, 4, 11, 0, 0, 0)}
-        className="absolute right-0 top-10 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-      />
+      <div className="absolute inset-y-0 right-0 w-1/2 flex items-center justify-center ">
+        <PieChartDemo className="h-[300px] w-[500px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105"/>
+      </div>
     ),
   },
   {
