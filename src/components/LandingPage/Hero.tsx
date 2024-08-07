@@ -23,13 +23,24 @@ export default function Hero() {
                   Connect
               </span> 
               <span>
-                  with other founders!
+                  with other founders
               </span> 
           </span> 
         </h1>
+        <p className="mt-5 text-center text-xl text-gray-500">
+          Create your page
+          <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mx-1">
+            quickly
+          </span> 
+          and 
+          <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mx-1">
+            share
+          </span>
+          it with the world
+          </p>
       </BlurFade>
       <BlurFade duration={0.75} className="z-10 mt-5">
-        <AnimatedButton text="Get Started" />
+        <AnimatedButton text="Join the Waitlist" />
       </BlurFade>
       
       <DotPattern

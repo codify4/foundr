@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
       <div className="my-5 pt-5 border-t border-white/10 text-center">
-          <p className="text-sm">&copy; {currentYear} Your Company Name. All rights reserved.</p>
+          <p className="text-sm">&copy; {currentYear} Foundr. All rights reserved.</p>
         </div>
     </footer>
   );

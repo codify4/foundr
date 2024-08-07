@@ -39,7 +39,7 @@ const LoginButton = ({ className }: { className?: string }) => {
       }}
       className={className}
     >
-      Sign In
+      Get Started 
     </Button>
   );
 };
