@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className="relative flex h-[800px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <BlurFade duration={0.5}>
-        <h1 className="flex flex-col items-center justify-center gap-2 w-full z-50 whitespace-pre-wrap text-center text-5xl lg:text-8xl tracking-tighter text-black">
+        <h1 className="flex flex-col items-center justify-center gap-2 w-full z-50 whitespace-pre-wrap text-center text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black">
           <span className="flex flex-col xl:flex-row items-center justify-center gap-1 lg:gap-2">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                   Share

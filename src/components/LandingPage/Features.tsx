@@ -11,7 +11,7 @@ const features = [
     name: "Share your project",
     description: "Give brief info on past projects",
     href: "/",
-    background: <AnimatedListDemo className="absolute h-[300px] w-[400px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105"/>,
+    background: <AnimatedListDemo className="absolute flex md:items-end lg:items-start  h-[300px] w-[400px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105"/>, 
     className: "col-span-1 row-span-1 h-[350px]"
   },
   {
@@ -47,7 +47,7 @@ const features = [
 
 export default async function Features() {
   return (
-    <BentoGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-4 sm:grid-rows-2 gap-4 my-10">
+    <BentoGrid className="grid grid-cols-1 lg:grid-cols-3 grid-rows-4 sm:grid-rows-2 gap-4 my-10 w-full">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}
