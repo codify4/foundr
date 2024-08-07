@@ -11,7 +11,7 @@ type PricingCardProps = {
 
 const PricingCard = ({ title, price, features, recommended }: PricingCardProps) => {
   return (
-    <ShineBorder className="rounded-xl h-full w-[350px]">
+    <ShineBorder className="rounded-xl h-full w-[300px] xl:w-[350px]">
       <div className="bg-white/90 backdrop-blur-sm h-full flex flex-col items-start justify-start p-4">
         {recommended && <div className='flex self-end bg-primary px-5 py-1 rounded-full text-white text-sm'>Recommended</div>}
         <div className="flex-grow text-lg">
