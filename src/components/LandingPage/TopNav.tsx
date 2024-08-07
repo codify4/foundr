@@ -23,10 +23,10 @@ const TopNav = ({ features, pricing }: { features: string, pricing: string }) =>
           <div className="hidden md:flex md:items-center md:justify-center">
             <div className="flex items-center space-x-4">
               <Link href={`#${features}`} className="px-3 py-2 rounded-md">
-                <Button variant="ghost" className="text-base px-3 py-2 rounded-md hover:bg-gray-200">Features</Button>
+                <Button variant="ghost" className="text-base px-3 py-2 rounded-md hover:bg-slate-200 hover:text-primary">Features</Button>
               </Link>
               <Link href={`#${pricing}`} className="px-3 py-2 rounded-md">
-                <Button variant="ghost" className="text-base px-3 py-2 rounded-md hover:bg-gray-200">Pricing</Button>
+                <Button variant="ghost" className="text-base px-3 py-2 rounded-md hover:bg-slate-200 hover:text-primary">Pricing</Button>
               </Link>
             </div>
           </div>
