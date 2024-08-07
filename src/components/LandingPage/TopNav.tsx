@@ -11,13 +11,13 @@ const TopNav = ({ features, pricing }: { features: string, pricing: string }) =>
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 bg-accent text-primary w-full z-10">
+    <nav className="fixed top-0 left-0 z-50 bg-accent text-primary w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-row items-center justify-center">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
               <Image src="/foundr.png" width={40} height={40} alt="foundr" />
-              <span className="text-lg font-semibold">Trackr.gl</span>
+              <span className="text-lg font-semibold">Foundr</span>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:justify-center">

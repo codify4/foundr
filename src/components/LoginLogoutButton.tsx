@@ -27,7 +27,7 @@ const LoginButton = ({ className }: { className?: string }) => {
         }}
         className={className}
       >
-        Log out
+        Sign Out
       </Button>
     );
   }
@@ -39,7 +39,7 @@ const LoginButton = ({ className }: { className?: string }) => {
       }}
       className={className}
     >
-      Login
+      Sign In
     </Button>
   );
 };

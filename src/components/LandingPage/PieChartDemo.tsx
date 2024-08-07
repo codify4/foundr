@@ -40,7 +40,6 @@ export function PieChartDemo({ className }: { className?: string }) {
     <Card className={className}>
       <CardHeader className="items-center pb-0">
         <CardTitle>X posts vs GitHub Commits</CardTitle>
-        <CardDescription>January - August 2024</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer

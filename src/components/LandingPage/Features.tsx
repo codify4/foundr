@@ -26,7 +26,7 @@ const features = [
     Icon: CalendarCheck,
     name: "Activity Graphs",
     description: "Connect your GitHub contributions graph or a custom X posts graph.",
-    className: "col-span-2 row-span-1 relative overflow-hidden", // Added relative and overflow-hidden
+    className: "col-span-2 row-span-1 relative overflow-hidden",
     href: "#",
     background: (
       <div className="absolute inset-y-0 right-0 w-1/2 flex items-center justify-center ">
@@ -47,7 +47,7 @@ const features = [
 
 export default async function Features() {
   return (
-    <BentoGrid className="grid-rows-1 lg:grid-rows-3 ">
+    <BentoGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-4 sm:grid-rows-3 gap-4">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}
