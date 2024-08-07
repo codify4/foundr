@@ -6,12 +6,14 @@ type PricingCardProps = {
   title: string;
   price: string;
   features: string[];
+  recommended: boolean;
 }
 
-const PricingCard = ({ title, price, features }: PricingCardProps) => {
+const PricingCard = ({ title, price, features, recommended }: PricingCardProps) => {
   return (
     <ShineBorder className="rounded-xl h-full">
       <div className="bg-white/90 backdrop-blur-sm h-full flex flex-col items-start justify-start p-6">
+        {recommended && <div className='flex self-end bg-primary px-5 py-1 rounded-full text-white text-sm'>Recommended</div>}
         <div className="flex-grow">
           <h3 className="text-2xl font-bold text-primary">{title}</h3>
           <div className="flex items-baseline my-4 text-primary">
