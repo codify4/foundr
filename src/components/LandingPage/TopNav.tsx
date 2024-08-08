@@ -28,7 +28,9 @@ const TopNav = ({ features, pricing }: { features: string, pricing: string }) =>
               </Link>
             </div>
           </div>
-          <Button className='hidden text-white md:flex md:items-center md:justify-center px-3 py-2 rounded-md hover:bg-secondary'>Sign In</Button>
+          <Link href="/signin">
+            <Button className='hidden text-white md:flex md:items-center md:justify-center px-3 py-2 rounded-md hover:bg-secondary'>Sign In</Button>
+          </Link>
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +55,9 @@ const TopNav = ({ features, pricing }: { features: string, pricing: string }) =>
           <div className="flex flex-col items-center justify-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href={`#${features}`} className=" px-3 py-2 rounded-md">Features</Link>
             <Link href={`#${pricing}`} className=" px-3 py-2 rounded-md">Pricing</Link>
-            <Button className='text-white md:flex md:items-center md:justify-center px-3 py-2 rounded-md bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary'>Sign In</Button>
+            <Link href="/signin">
+              <Button className='hidden text-white md:flex md:items-center md:justify-center px-3 py-2 rounded-md hover:bg-secondary'>Sign In</Button>
+            </Link>
           </div>
 
         </div>
