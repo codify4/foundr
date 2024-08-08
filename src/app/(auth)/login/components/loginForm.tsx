@@ -1,5 +1,4 @@
 /* Components */
-import Link from "next/link"
 import {
   Card,
   CardContent,
@@ -13,13 +12,13 @@ export function LoginForm() {
   return (
     <Card className="mx-auto max-w-sm shadow-xl">
       <CardHeader>
-        <CardTitle className="text-2xl">Sign In</CardTitle>
+        <CardTitle className="text-2xl">Join our waitlist</CardTitle>
         <CardDescription>
-          Choose a sign in method with any of the providers below
+          Choose a provider below to join the waitlist
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form action="">
+        <form>
             <SignInWithGoogleButton/> 
         </form>
       </CardContent>

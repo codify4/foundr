@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { signInWithGoogle } from "@/lib/auth-actions"
+import { FaGoogle } from "react-icons/fa";
 
 const SignInWithGoogleButton = () => {
   return (
@@ -12,8 +13,9 @@ const SignInWithGoogleButton = () => {
         onClick={() => {
             signInWithGoogle();
         }}
-    >
-        Sign In with Google
+    > 
+      <FaGoogle size={20} className="mr-2" />
+      <span>Join with Google</span>
     </Button>
   )
 }
