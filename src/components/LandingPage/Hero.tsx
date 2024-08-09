@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="relative flex h-[800px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <BlurFade duration={0.5}>
-        <Link href="/signin" className="mb-10">
+        <Link href="/waitlist" className="mb-10">
           <AnimatedGradientTextDemo />
         </Link>
         <h1 className="flex flex-col items-center justify-center gap-2 w-full z-50 whitespace-pre-wrap text-center text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black">
@@ -45,7 +45,7 @@ export default function Hero() {
           </p>
       </BlurFade>
       <BlurFade duration={0.75} className="z-10 mt-5">
-        <Link href="/signin">
+        <Link href="/waitlist">
           <AnimatedButton text="Get Started" />
         </Link>
       </BlurFade>

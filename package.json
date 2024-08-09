@@ -30,6 +30,7 @@
     "react-social-icons": "^6.17.0",
     "react-spring": "^9.7.4",
     "recharts": "^2.12.7",
+    "resend": "^3.5.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
   },
