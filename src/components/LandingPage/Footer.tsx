@@ -16,6 +16,7 @@ const Footer = () => {
                 style={{ height: 40, width: 40 }}
                 bgColor="#ffffff"
                 fgColor="#050C9C"
+                key={social.name}
               />
             ))}
           </div>
