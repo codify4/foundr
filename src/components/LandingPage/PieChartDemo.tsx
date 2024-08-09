@@ -46,11 +46,10 @@ export function PieChartDemo({ className }: { className?: string }) {
           config={chartConfig}
           className="mx-auto aspect-square max-h-[250px] gap-1 flex"
         >
-          <PieChart className="rotate-45">
+          <PieChart>
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
-              className="-rotate-45"
             />
             <Pie data={chartData} dataKey="visitors" nameKey="browser" />
           </PieChart>
