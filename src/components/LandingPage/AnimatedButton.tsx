@@ -17,7 +17,7 @@ export default function AnimatedButton({text}: {text: string}) {
       changeText={
         <span className="group flex flex-row items-center justify-center border-primary">
           <CheckIcon className="mr-1" />
-          Let's goo!
+          Let&apos;s goo!
         </span>
       }
     />

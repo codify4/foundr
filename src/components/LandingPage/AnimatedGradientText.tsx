@@ -13,7 +13,7 @@ export async function AnimatedGradientTextDemo() {
                     `inline animate-gradient bg-gradient-to-r from-primary to-secondary bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
                 )}
             >
-                Join the waitlist, it's live now
+                Join the waitlist, it&apos;s live now
             </span>
             <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
         </AnimatedGradientText>
